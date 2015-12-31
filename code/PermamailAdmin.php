@@ -7,18 +7,19 @@
  * @author Uncle Cheese <unclecheese@leftandmain.com>
  * @package  silverstripe-permamail
  */
-class PermamailAdmin extends ModelAdmin {
+class PermamailAdmin extends ModelAdmin
+{
 
-	private static $menu_title = 'Email';
+    private static $menu_title = 'Email';
 
-	private static $managed_models = array (
-		'SentEmail' => array (
-			'title' => 'Outbound Emails'
-		),
-		'PermamailTemplate' => array (
-			'title' => 'Email Templates'
-		)
-	);
+    private static $managed_models = array(
+        'SentEmail' => array(
+            'title' => 'Outbound Emails'
+        ),
+        'PermamailTemplate' => array(
+            'title' => 'Email Templates'
+        )
+    );
 
-	private static $url_segment = 'email';
+    private static $url_segment = 'email';
 }
